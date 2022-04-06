@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #ddd;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.row img{
+  border-radius: 90%;
+  
+}
+.nav-item a{
+  font-size: 20px;
+  color: white;
+  /* padding: 0px 20px; */
+  text-align: center;
+}
+.nav-item{
+  padding: 0px 20px;
+}
+.nav-item a:hover{
+  color: black;
+  border-radius: 4px;
+  background: white;
+}
+
+.logo{
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+}
+
+.Ayush {
+  width: 100%;
+  height: 500px;
+  
+}
+.mandal {
+  text-align: center;
+}
+
+.top {
+  overflow: hidden;
+  background: #333;
+  width: 14.19%;
+}
+.top a { 
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ } 
+ .top a:hover { /*("hover" is use to when user point that patucular point it responds) */
+  background: #ddd;
+  color: black;
+}
+.top a.active {
+  background: #04AA6D;
+  color: white;
+}
+
+.image{
+  width: 100%;
+  height: 60%;
+}
+.top_items{
+  border: 0px solid black;
+  /* height: 500px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+.top_items_bar{
+  border: 2px solid black;
+  width: 370px;
+  height: 250px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.title h2 {
+  font-size: 35px;
+  text-align: center;
+  /* justify-content: space-around; */
+  /* padding-bottom: 20px; */
+  margin-top: 0px;
+  /* float: 0px 50px; */
+}
+.top_items_bar img{
+  width: 100%;
+  height: 80%;
+}
+
+.forrr{
+  /* margin-top: auto; */
+  /* padding-top: 50px; */
+  /* top: 90%; */
+  /* right: 100%; */
+  position: absolute;
+   top: 110px;
+  right: 16px;
+}
