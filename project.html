@@ -12,41 +12,95 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-
-      .container-fluid{
-        display: flex;
-      }
+        .container-fluid{
+            display: flex;
+        }
+        .logo{
+            font-size: 50px;
+            padding: 0px 20px;
+        }
+        #click{
+            display: none;
+        }
+        .navitem a{
+            text-decoration: none;
+            color: white;
+            padding: 0px 20px;
+            font-size: 20px;
+        }
+        .navitem a:hover{
+            color: black;
+            background-color: white;
+            border-radius: 4px;
+        }
+        .tabbtn{
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+        }
+        @media (max-width:800px){
+            
+            .navitem{
+                /* font-size: 30px; */
+                margin: 40px 0px;
+                /* padding: 20px 0px 40px; */
+            }
+            .navitem a{
+                font-size: 25px;
+            }
+            .container-fluid{
+                display: block;
+            }
+            .navbar-nav{
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                height: 100vh;
+                width: 100%;
+                text-align: center;
+                background-color: #111;
+                display: block;
+                transition: all 0.3s ease;
+            }
+            .tabbtn{
+                padding-right: 10px;
+                display: contents;
+            }
+            #click:checked ~ .navbar-nav{
+                left: 0%;
+            }
+        }
     </style>
 </head>
 <body>
-        <!-- Coad for Navigation Bar -->
-        <nav class="navbar navbar-expand-sm bg-dark text-white">
-          <div class="container-fluid">
-            <!-- Links -->
-            <div class="logo">
-              <a>Foodey.com</a>
-            </div>
+    <nav class="navbar navbar-expand-sm bg-dark text-white">
+        <div class="container-fluid">
+            <div class="logo">Logo.com</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="tabbtn">
+                <i class="fa fa-bars"></i>
+            </label>
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <input type="text" name="text" class="search" placeholder="Search Your Food">
+                <li class="navitem">
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li class="navitem">
+                    <a href="#">About</a>
+                </li>
+                <li class="navitem">
+                    <a href="#">Gallery</a>
+                </li>
+                <li class="navitem">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="navitem">
+                    <a href="#">FAQ</a>
+                </li>
             </ul>
-          </div>
-        
-        </nav>
-    
-  
+        </div>
+    </nav>
   <!-- Coad for Navigation Bar -->
     <div>
         <div class="jumbotron text-center">
