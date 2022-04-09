@@ -7,6 +7,10 @@
     <title>Navigation-bar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
     <style>
         .container-fluid{
             display: flex;
@@ -25,14 +29,20 @@
             font-size: 20px;
         }
         .navitem a:hover{
-            color: aqua;
-            /* background-color: white; */
+            color: black;
+            background-color: white;
             border-radius: 4px;
         }
         .tabbtn{
             font-size: 30px;
             cursor: pointer;
             display: none;
+        }
+        .col-sm-4 img{
+                border-radius: 10px;
+        }
+        .col-sm-4 a{
+                text-decoration: none;
         }
         @media (max-width:800px){
             
@@ -41,6 +51,12 @@
                 margin: 40px 0px;
                 /* padding: 20px 0px 40px; */
             }
+            .navitem a:hover{
+            color: aqua;
+            /* background-color: none; */
+            background: none;
+            /* border-radius: 4px; */
+        }
             .navitem a{
                 font-size: 25px;
             }
@@ -65,13 +81,28 @@
             #click:checked ~ .navbar-nav{
                 left: 0%;
             }
+            .col-sm-4 img{
+                border-radius: 10px;
+                width: 350px;
+                height: 400px;
+            }
+            .row{
+                display: block;
+                
+            }
+            .col-sm-4 a{
+                text-decoration: none;
+                color: red;
+                /* font-size: 20px; */
+
+            }
         }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark text-white">
         <div class="container-fluid">
-            <div class="logo">Logo.com</div>
+            <div class="logo">Foodey.com</div>
             <input type="checkbox" id="click">
             <label for="click" class="tabbtn">
                 <i class="fa fa-bars"></i>
@@ -95,5 +126,61 @@
             </ul>
         </div>
     </nav>
+    <!-- Coad for Navigation Bar -->
+    <div>
+        <div class="jumbotron text-center">
+            <h1>All About Food</h1>
+        </div>
+          <div class="container">
+            <div class="row">
+            
+              <div class="col-sm-4">
+                <img src="Image/a.jpg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Chicken_as_food" target="_blank" >Chicken</a></h1>
+              </div>
+              <div class="col-sm-4">
+                <img src="Image/d.jpeg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Pizza" target="_blank">Pizza</a></h1>
+              </div>
+              <div class="col-sm-4">
+                <img src="Image/b.jpg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Roti" target="_blank">Roti</a></h1>
+              </div>
+            
+              <div class="col-sm-4">
+                <img src="Image/i.jpeg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Chow_mein" target="_blank">Chaumin</a></h1>
+              </div>
+
+              <div class="col-sm-4">
+                <img src="Image/h.jpeg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Fried_rice" target="_blank">Fried Rice</a></h1>
+              </div>
+
+              <div class="col-sm-4">
+                <img src="Image/g.jpeg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Momo_(food)" target="_blank">Momo</a></h1>
+              </div>
+
+              <div class="col-sm-4">
+                <img src="Image/f.jpeg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Hamburger" target="_blank">Hamburger</a></h1>
+              </div>
+
+              <div class="col-sm-4">
+                <img src="Image/e.jpeg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Mattar_paneer" target="_blank">Mutter Panner</a></h1>
+              </div>
+          
+              <div class="col-sm-4">
+                <img src="Image/c.jpg" height="400px" width="100%">
+                <h1 align="center"><a href="https://en.m.wikipedia.org/wiki/Chicken_curry" target="_blank">Chicken Curry</a></h1>
+              </div>
+          
+            </div>
+          
+          </div>
+        </div>
+    </div>
 </body>
 </html>
