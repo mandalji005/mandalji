@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation-bar</title>
+    <title>Foodey.com</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
     <style>
         .container-fluid{
             display: flex;
+        }
+        .containerr{
+            padding-top: 100px;
         }
         .logo{
             font-size: 50px;
@@ -21,6 +21,11 @@
         }
         #click{
             display: none;
+        }
+        .navbar{
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
         }
         .navitem a{
             text-decoration: none;
@@ -73,6 +78,11 @@
                 background-color: #111;
                 display: block;
                 transition: all 0.3s ease;
+            }
+            #click:checked ~ .tabbtn i:before{
+                content: "\f00d";
+                font-size: 35px;
+                /* font */
             }
             .tabbtn{
                 padding-right: 10px;
@@ -127,7 +137,7 @@
         </div>
     </nav>
     <!-- Coad for Navigation Bar -->
-    <div>
+    <div class="containerr">
         <div class="jumbotron text-center">
             <h1>All About Food</h1>
         </div>
@@ -182,5 +192,48 @@
           </div>
         </div>
     </div>
+    <div class="jumbotron text-center">
+        <h1>News</h1>
+        <p>All About Food</p> 
+      </div>
+        
+      <div class="container">
+      
+        <div class="row">
+
+          <div class="col-sm-3">
+            <h3>What is Food?</h3>
+            <p>Food is the third most important thing for living beings to provide energy and development, maintain life, or stimulate growth after air and water. In fact, it is one of the most complicated sets of chemicals.</p>
+            <p>On the other hand, nutrition connotes a dynamic process in which swallowed food is utilized by the human body for nourishment.</p>
+            <p>We must know that the terms ‘food’ and ‘nutrition’ are sometimes used synonymously, which is not correct completely. Food is a composite mixture of various ingredients that are consumed for nutrition.</p>
+            <p>As much as we eat, our body gets nourished. When there is an insufficient intake of protein, energy or carbohydrate, there is often illness or infection.</p>
+          </div>
+
+          <div class="col-sm-3">
+            <h3>Importance of Food</h3>
+            <p>The importance of food is obvious and essential. Healthy food provides us the nutrients and energy to develop and grow, be active and healthy, to move, play, work, think and learn.</p>
+            <p>Foods are directly related to our body and mental and social health because each food or liquid contains particular nutrition such as carbohydrates, protein, vitamins, minerals, fats, etc, which are very necessary for our physical and mental growth.</p>
+            <p>Food and water are the main sources of nutrition and strengthening the body, but many of the foods we eat do not have any nutritional values.</p>
+          </div>
+      
+          <div class="col-sm-3">
+            <h3>Food Sources</h3>        
+            <p>Foods are secured through several methods: agriculture, hunting, gathering, etc. The detailed statement is that most food has its origin in plants.</p>
+            <p>Some food is derived directly from plants, but even animals are also used as food sources that are picked up by feeding food from plants.</p>
+            <p>Some foods are not directly obtained from animal or plant sources they are obtained from various edible fungi, especially mushrooms. </p>
+            <p>Another example is blue-green algae such as Spirulina. Inorganic substances such as baking soda, salt, and tartar cream are used to preserve or chemically convert a component.</p>
+          </div>
+
+          <div class="col-sm-3">
+            <h3>Conclusion</h3>        
+            <p>Food is an important element in building the human body.</p>
+            <p>The Almighty God has created many foods that have important benefits for building cells and body tissues by containing important and necessary nutrients, so the body needs to eat food in sufficient quantities to get energy.</p>
+            <p>A human body needs foods to do many functions in the body, bodybuilding, and growth, and development, as well as to resist the germs and various diseases that may be infected.</p> 
+            <p>In the last, we have given some health tips that will help you to stay healthy and keep your body maintained.</p>
+          </div>
+      
+        </div>
+      
+      </div>
 </body>
 </html>
